@@ -6,7 +6,12 @@ const path = require("path");
 const app = express();
 
 const corsOptions = {
-  origin: ["https://localhost:3000", "https://localhost:3300"],
+  origin: [
+    "https://localhost:3000",
+    "https://localhost:3300",
+    "https://localhost:5001",
+    "https://filebhejoo.herokuapp.com",
+  ],
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
@@ -19,7 +24,7 @@ app.use(express.static(staticPath));
 app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "ejs");
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 3000;
 
 const connectDB = require("./config/db");
 connectDB();
