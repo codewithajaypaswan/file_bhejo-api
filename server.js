@@ -19,7 +19,7 @@ app.use(express.static(staticPath));
 app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "ejs");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5001;
 
 const connectDB = require("./config/db");
 connectDB();
