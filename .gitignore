@@ -1,4 +1,4 @@
-.evn
+.env
 uploads/*
 !.uploads/.gitkeep
 node_modules
