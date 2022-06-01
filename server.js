@@ -6,14 +6,10 @@ const path = require("path");
 const app = express();
 
 const corsOptions = {
-  origin: [
-    "https://localhost:3000",
-    "https://localhost:3300",
-    "https://localhost:5001",
-    "https://filebhejoo.herokuapp.com",
-  ],
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
 };
 app.use(cors(corsOptions));
 app.use(express.static("public"));
