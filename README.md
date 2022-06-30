@@ -4,7 +4,7 @@
 Helps to share big file, just drag and drog the file and it will create
 the link, copy that link and send to anyone or over email
 
-# [View Project](https://www.quora.com)
+# [View Project](https://file-bhejo.netlify.app/)
 ## Features
 
 - Complete CRUD Application
